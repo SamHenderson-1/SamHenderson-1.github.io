@@ -3,6 +3,12 @@
     src: url(Moon2.0-Regular.otf);
 }
 
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+}
+
 /* ===== Reset ===== */
 * {
         margin: 0;
@@ -44,7 +50,7 @@
         margin-bottom: 15px;
     }
 
-    /* ===== Navbar ===== */
+    /* ===== Navigation ===== */
     nav {
         background: #1c221f;
         padding: 15px 0;
@@ -59,10 +65,79 @@
         position: relative;
     }
 
-    nav ul {
-        list-style: none;
+    .menu-button {
+        background: none;
+        transition: transform 0.2s ease;
+    }
+
+    .menu-button:hover {
+        transform: scale(1.1);
+    }
+
+    .dropdown-menu {
+    position: absolute;
+
+    top: 70px;
+    right: 0;
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    min-width: 220px;
+
+    overflow: hidden;
+
+    display: none;
+
+    flex-direction: column;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .dropdown-menu {
+    position: absolute;
+
+    top: 70px;
+    right: 0;
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    min-width: 220px;
+
+    overflow: hidden;
+
+    display: none;
+
+    flex-direction: column;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .dropdown-menu.show {
         display: flex;
-        gap: 20px;
+    }
+
+    /* Links */
+
+    .dropdown-menu a {
+        padding: 16px 20px;
+
+        color: white;
+
+        transition:
+            background 0.2s ease,
+            padding-left 0.2s ease;
+    }
+
+    .dropdown-menu a:hover {
+        background: #334155;
+
+        padding-left: 28px;
     }
 
     /* ===== Hero ===== */
