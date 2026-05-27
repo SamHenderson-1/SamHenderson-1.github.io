@@ -51,3 +51,38 @@
         text-indent: 2em; 
         margin-bottom: 10px;
     }
+
+    /*  MOBILE ABOUT PAGE */
+
+@media (max-width: 768px) {
+
+    .about-header {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 24px;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-intro {
+        min-width: unset;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        margin-bottom: 30px;
+    }
+
+    .indented-p {
+        text-indent: 1em;
+    }
+
+}

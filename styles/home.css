@@ -34,6 +34,7 @@
 
         display: flex;
         align-items: flex-end;
+        position: relative;
     }
 
     .project-card:hover {
@@ -48,7 +49,7 @@
         padding: 32px;
     }
 
-    .project.header h3 {
+    .project-header h3 {
         font-size: 2rem;
         margin-bottom: 10px;
     }
@@ -81,6 +82,9 @@
         border-radius: 999px;
 
         font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
     .meta-item img {
@@ -117,3 +121,56 @@
         align-items: center;
         justify-content: center;
     }
+
+    /* MOBILE HOME PAGE */
+
+@media (max-width: 768px) {
+
+    .projects-grid {
+        gap: 24px;
+    }
+
+    .project-card {
+        min-height: 340px;
+
+        border-radius: 12px;
+    }
+
+    .project-overlay {
+        padding: 20px;
+    }
+
+    .project-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        font-size: 0.95rem;
+
+        margin-bottom: 16px;
+    }
+
+    .project-meta {
+        gap: 8px;
+
+        margin-bottom: 18px;
+    }
+
+    .meta-item {
+        font-size: 0.8rem;
+
+        padding: 6px 10px;
+    }
+
+    .meta-item img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .skill {
+        font-size: 0.85rem;
+
+        padding: 6px 10px;
+    }
+
+}
